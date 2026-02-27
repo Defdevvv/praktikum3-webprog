@@ -17,7 +17,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama</th>
-                                <th>NRP</th>
+                                <th>NPM</th>
                                 <th>Email</th>
                                 <th>Jurusan</th>
                                 <th>Aksi</th>
@@ -58,19 +58,19 @@
         <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="post">
             <input type="hidden" name="id" id="id">
             <div class="mb-4">
-                <label for="nama" class="form-label text-muted small text-uppercase fw-bold tracking-wide">Nama Lengkap</label>
+                <label for="nama" class="form-label text-light small text-uppercase fw-bold tracking-wide">Nama Lengkap</label>
                 <input type="text" class="form-control glass-input" id="nama" name="nama" required>
             </div>
             <div class="mb-4">
-                <label for="nrp" class="form-label text-muted small text-uppercase fw-bold tracking-wide">NRP</label>
+                <label for="nrp" class="form-label text-light small text-uppercase fw-bold tracking-wide">NPM</label>
                 <input type="number" class="form-control glass-input" id="nrp" name="nrp" required>
             </div>
             <div class="mb-4">
-                <label for="email" class="form-label text-muted small text-uppercase fw-bold tracking-wide">Email</label>
+                <label for="email" class="form-label text-light small text-uppercase fw-bold tracking-wide">Email</label>
                 <input type="email" class="form-control glass-input" id="email" name="email" required>
             </div>
             <div class="mb-4">
-                <label for="jurusan" class="form-label text-muted small text-uppercase fw-bold tracking-wide">Jurusan</label>
+                <label for="jurusan" class="form-label text-light small text-uppercase fw-bold tracking-wide">Jurusan</label>
                 <select class="form-select glass-input" id="jurusan" name="jurusan">
                     <option value="Teknik Informatika">Teknik Informatika</option>
                     <option value="Sistem Informasi">Sistem Informasi</option>

@@ -17,8 +17,8 @@ $(document).ready(function() {
         }
     });
 
-    // Handle SweetAlert for Delete
-    $('.btn-hapus').on('click', function(e) {
+    // Handle SweetAlert for Delete (delegated - DataTables re-renders DOM)
+    $(document).on('click', '.btn-hapus', function(e) {
         e.preventDefault();
         const href = $(this).attr('href');
         const nama = $(this).data('nama');
@@ -54,8 +54,8 @@ $(document).ready(function() {
         $('.modal-body form').attr('action', BASEURL + '/mahasiswa/tambah');
     });
 
-    // Handle Modal Edit
-    $('.tampilModalUbah').on('click', function() {
+    // Handle Modal Edit (delegated - DataTables re-renders DOM)
+    $(document).on('click', '.tampilModalUbah', function() {
         $('#formModalLabel').html('Ubah Data Mahasiswa');
         $('.modal-footer button[type=submit]').html('Ubah Data');
         $('.modal-body form').attr('action', BASEURL + '/mahasiswa/ubah');

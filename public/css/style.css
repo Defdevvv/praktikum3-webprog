@@ -163,11 +163,21 @@ table.dataTable {
     margin-bottom: 6px !important;
 }
 
-table.dataTable thead th,
-table.dataTable thead td,
-table.dataTable tfoot th,
-table.dataTable tfoot td {
+/* Override Bootstrap 5 + DataTables white header background */
+.table> :not(caption)>*>* {
     background-color: transparent !important;
+    color: inherit !important;
+    box-shadow: none !important;
+}
+
+table.dataTable thead>tr>th,
+table.dataTable thead>tr>td,
+table.dataTable tfoot>tr>th,
+table.dataTable tfoot>tr>td,
+.dataTables_wrapper table thead th,
+.dataTables_wrapper table thead td {
+    background-color: transparent !important;
+    color: #a0a0a5 !important;
 }
 
 table.dataTable tbody tr.odd>*,
@@ -176,7 +186,8 @@ table.dataTable tbody tr.even>* {
     box-shadow: none !important;
 }
 
-table.dataTable tbody td {
+table.dataTable tbody td,
+table.dataTable tbody th {
     background-color: transparent !important;
     color: #e0e0e0 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.03) !important;
