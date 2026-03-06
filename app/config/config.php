@@ -1,5 +1,5 @@
 <?php
-define('BASEURL', 'http://praktikum3.test');
+define('BASEURL', 'http://praktikum3-webprog.test');
 
 // DB
 define('DB_HOST', 'localhost');
